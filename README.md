@@ -17,7 +17,7 @@ Interface classes follow the same rules as abstract class. An interface class ca
 **In an Interface Class:**
 - Don't need the `class` keyword.
 - Can't be used to make objects.
-- **Methods** by default are `abstract` and **must be overriden**.
+- **Methods** by default are `public` and `abstract` and **must be overriden**.
 - **Attributes** by default are `public`, `static`, and `final` (constant).
 - Constructors are **NOT ALLOWED**.
 
@@ -27,7 +27,7 @@ Interface classes follow the same rules as abstract class. An interface class ca
 interface Mammal {
 	// Since by default is final, must be initialized.
 	String blood = "warm blooded";
-	// By default methods are abstract.
+	// By default methods are public and abstract.
 	void about();
 }
 
@@ -35,7 +35,7 @@ class Main {
 	
 	public static void main(String[]args) {
 		// ****** ERROR *********
-		Car myCar = new Car(); // Cannot instanciate Interface classes
+		Mammal dog = new Mammal(); // Cannot instanciate Interface classes
 	}
 }
 ```
@@ -49,14 +49,14 @@ Java allows you to inherit multiple interface classes at once using the `impleme
 interface Mammal {
 	// Since by default is final, must be initialized.
 	String blood = "warm blooded";
-	// By default methods are abstract.
+	// By default methods are public and abstract.
 	void about();
 }
 
 interface Animal {
 	// Since by default is final, must be initialized.
 	String type = "heterotroph";
-	// By default methods are abstract.
+	// By default methods are public and abstract.
 	void diet();
 }
 
@@ -92,7 +92,7 @@ To learn more about interfaces in Java visit: https://www.w3schools.com/java/jav
 
 ### Animal Classification
 
-For this assignment you are provided with 5 classes: `Vehicle`, `Car`, `Engine`, and `Truck`. 
+For this assignment you are provided with 4 classes: `Vehicle`, `Car`, `Engine`, and `Truck`. 
 
 `Vehicle`, `Car`, and `Engine` are **abstract classes**.
 
