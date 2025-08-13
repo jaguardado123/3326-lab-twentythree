@@ -92,13 +92,13 @@ To learn more about interfaces in Java visit: https://www.w3schools.com/java/jav
 
 ### Animal Classification
 
-For this assignment you are provided with 4 classes: `Vehicle`, `Car`, `Engine`, and `Truck`. 
+For this assignment you are provided with 4 classes: `BasicComputer`, `OfficeComputer`, and `Computer`. 
 
-`Vehicle`, `Car`, and `Engine` are **abstract classes**.
+`BasicComputer`, and `OfficeComputer` are **abstract classes**.
 
-The `Truck` class needs to inherit the `Vehicle`, `Car`, and `Engine` classes. Unfortunately, Java only lets us inherit one class at a time, so a Russian Nesting Doll scenario is set up to achieve this...
+The `Computer` class needs to utilize the properties of `BasicComputer` and `OfficeComputer` classes. Unfortunately, Java only lets us inherit one class at a time, so a Russian Nesting Doll scenario is set up to achieve this...
 
-Refactor the `Vehicle`, `Car`, and `Engine` classes so that `Truck` can inherit them all at once.
+Refactor the `BasicComputer`, and `OfficeComputer` classes so that `Computer` can inherit them all at once.
 
 After refactoring your code, run the test below to test your code.
 
