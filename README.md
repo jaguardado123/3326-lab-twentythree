@@ -1,4 +1,4 @@
-# Lab Assignment 23
+# Lab Assignment 24
 
 In this lab you will practice working with interfaces.
 
